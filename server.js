@@ -34,6 +34,7 @@ app.post("/post-cadastrado", (req, res) => {
   post.save((err) =>
     err ? console.log(err) : console.log("Criado com sucesso!")
   );
+  res.render('resposta')
 });
 
 app.listen(3333, () => console.log("Server is running in :3333 !!"));
